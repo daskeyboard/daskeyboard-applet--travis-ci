@@ -1,0 +1,50 @@
+{
+  "name": "daskeyboard-applet--travis-build-info",
+  "displayName": "Travis build info",
+  "version": "1.0.0",
+  "publisher": "Metadot Corporation",
+  "longDescription": "Get Travis build status alerts directly on a Das Keyboard Q keyboard. Requires a Travis account and the token linked to this account.",
+  "icon": "assets/icon.png",
+  "description": "Turn keys green, orange or red depending on your Travis build status",
+  "main": "index.js",
+  "authorName": "Das Keyboard",
+  "authorUrl": "https://twitter.com/daskeyboard",
+  "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
+  "homePageUrl": "https://travis.com",
+  "changelogUrl": "CHANGELOG.md",
+  "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--montastic/issues",
+  "developerRepoUrl": "https://github.com/daskeyboard/daskeyboard-applet--montastic",
+  "readMeEndUserUrl": "README_END_USER.md",
+  "license": "MIT",
+  "engines": {
+    "das-keyboard-q": "3.1.0"
+  },
+  "readMeUrl": "README.md",
+  "qConfig": {
+    "geometry": {
+      "width": 1,
+      "height": 1
+    },
+    "authorization": {
+      "type": "apiKey",
+      "hint": "Get your token from your preferences in the Travis website",
+      "supportUrl": "https://travis-ci.com/account/preferences"
+    },
+    "questions": [
+      {
+        "key": "repoId",
+        "label": "Choose a project to track",
+        "help": "select a location from the list",
+        "required": true,
+        "order": 1,
+        "controlType": "dropdown",
+        "dynamic": true,
+        "options": []
+      }
+    ]
+  },
+  "dependencies": {
+    "daskeyboard-applet": "^2.10.12",
+    "request-promise": "^4.2.2"
+  }
+}
