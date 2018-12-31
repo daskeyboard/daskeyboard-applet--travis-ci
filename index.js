@@ -12,13 +12,15 @@ const BUILD_STATE = Object.freeze({
 });
 
 const ColorForBuildState = {
+  "booting": "#FFA500", // orange
   "created": "#FFA500",
   "started": "#FFA500",
-  "passed": "#00FF00",
-  "failed": "#FF0000"
+  "passed": "#00FF00", // green
+  "failed": "#FF0000" // red
 }
 
 const EffectForBuildState = {
+  "booting": q.Effects.SET_COLOR,
   "created": q.Effects.SET_COLOR,
   "started": q.Effects.SET_COLOR,
   "passed": q.Effects.SET_COLOR,
@@ -26,10 +28,11 @@ const EffectForBuildState = {
 }
 
 const MessageForBuildState = {
-  "created": `Build is created`,
-  "started": `Build is running`,
-  "passed": `Build passed`,
-  "failed": `Build failed`
+  "booting": `build booting`,
+  "created": `build created`,
+  "started": `build running`,
+  "passed": `build passing`,
+  "failed": `build failing`
 }
 
 async function processReposResponse(response) {
@@ -52,7 +55,7 @@ class TravisBuildInfo extends q.DesktopApp {
   constructor() {
     super();
     // run every min
-    this.pollingInterval = 5000;
+    this.pollingInterval = 60000; // every minute
   }
 
   /**
@@ -172,8 +175,8 @@ class TravisBuildInfo extends q.DesktopApp {
           // Send the signal
           let signal = new q.Signal({
             points: [[new q.Point(signalColor, signalEffect)]],
-            name: `${repoName} build state`,
-            message: signalMessage,
+            name: `Travis`,
+            message: `${repoName}: ` + signalMessage,
             link: {
               url: `https://travis-ci.com/${this.repoSlug}`,
               label: `Show in Travis`
