@@ -1,0 +1,40 @@
+{
+  "@type": "repositories",
+  "@href": "/repos?limit=5",
+  "@representation": "standard",
+  "@pagination": {
+      "limit": 5,
+      "offset": 0,
+      "count": 26,
+      "is_first": true,
+      "is_last": false,
+      "next": {
+          "@href": "/repos?limit=5&offset=5",
+          "offset": 5,
+          "limit": 5
+      },
+      "prev": null,
+      "first": {
+          "@href": "/repos?limit=5",
+          "offset": 0,
+          "limit": 5
+      },
+      "last": {
+          "@href": "/repos?limit=5&offset=25",
+          "offset": 25,
+          "limit": 5
+      }
+  },
+  "repositories": [
+      {
+          "id": 3358319,
+          "name": "bam-rails",
+          "slug": "metadot/bam-rails"
+      },
+      {
+          "id": 3395554,
+          "name": "q-desktop",
+          "slug": "metadot/q-desktop"
+      }
+  ]
+}

@@ -144,10 +144,6 @@ class TravisBuildInfo extends q.DesktopApp {
           /* set the signal color depending on the build state. 
           White if state not recognized */
           logger.info(`Latest build state ${latestBuildState}`);
-          Object.keys(ColorForBuildState).forEach(o => {
-            logger.info(`lskdjflskdjf ${o}`);
-          })
-          console.log(Object.keys(ColorForBuildState));
           if (Object.keys(ColorForBuildState).includes(latestBuildState)) {
             signalColor = ColorForBuildState[latestBuildState];
           } else {
@@ -201,7 +197,8 @@ class TravisBuildInfo extends q.DesktopApp {
 
 
 module.exports = {
-  TravisBuildInfo: TravisBuildInfo
+  TravisBuildInfo: TravisBuildInfo,
+  processReposResponse: processReposResponse
 }
 
 const applet = new TravisBuildInfo();
