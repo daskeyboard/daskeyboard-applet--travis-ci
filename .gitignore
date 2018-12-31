@@ -10,3 +10,6 @@ test/auth.json
 
 # Dependency directories
 node_modules/
+
+# tmp folder
+tmp/
