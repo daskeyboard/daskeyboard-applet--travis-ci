@@ -2,7 +2,7 @@
   "name": "daskeyboard-applet--travis-build-info",
   "displayName": "Travis build info",
   "version": "1.0.0",
-  "publisher": "Metadot Corporation",
+  "publisher": "Das Keyboard",
   "longDescription": "Get Travis build status alerts directly on a Das Keyboard Q keyboard. Requires a Travis account and the token linked to this account.",
   "icon": "assets/icon.png",
   "description": "Turn keys green, orange or red depending on your Travis build status",
