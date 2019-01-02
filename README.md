@@ -23,6 +23,8 @@ the Q Desktop application [https://www.daskeyboard.com](https://www.daskeyboard.
 
 ## Running tests
 
+TODO: add info about API key.
+
 - `yarn test`
 
 ## Contributions

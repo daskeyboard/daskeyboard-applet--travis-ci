@@ -47,6 +47,16 @@ describe('TravisBuildInfo', () => {
           assert.equal(daskeyboardApplet.Effects.BLINK, signal.points[0][0].effect);
         }).catch(err => assert.fail(err));
       }).catch(err => assert.fail(err));
+    });
+
+    it('should get a blue solid signal for build canceled', async function () {
+      return buildAppWithCustomBuildCanceled().then((signal) => {
+        return signal.run().then(signal => {
+          assert.ok(signal);
+          assert.equal('#0000FF', signal.points[0][0].color);
+          assert.equal(daskeyboardApplet.Effects.SET_COLOR, signal.points[0][0].effect);
+        }).catch(err => assert.fail(err));
+      }).catch(err => assert.fail(err));
     })
   });
 });
@@ -94,6 +104,32 @@ async function buildAppWithCustomBuildFailed() {
     return new Promise((resolve, reject) => {
       try {
         const fakeResponse = fs.readFileSync(path.resolve('test/test-builds-response-failed.json'));
+        resolve(JSON.parse(fakeResponse));
+      } catch (err) {
+        reject(err);
+      }
+    });
+  }
+  return app.processConfig({
+    authorization: {
+      apiKey: apiKey
+    },
+    applet: {
+      user: {
+        repoId: 'Dummy'
+      }
+    }
+  }).then(() => {
+    return app;
+  });
+}
+
+async function buildAppWithCustomBuildCanceled() {
+  let app = new t.TravisBuildInfo();
+  app.getBuilds = async function () {
+    return new Promise((resolve, reject) => {
+      try {
+        const fakeResponse = fs.readFileSync(path.resolve('test/test-builds-response-canceled.json'));
         resolve(JSON.parse(fakeResponse));
       } catch (err) {
         reject(err);

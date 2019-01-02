@@ -1,0 +1,33 @@
+{
+  "@type": "builds",
+  "@href": "/repo/3395554/builds?limit=2",
+  "@representation": "standard",
+  "@pagination": {
+      "limit": 2,
+      "offset": 0,
+      "count": 2324,
+      "is_first": true,
+      "is_last": false,
+      "next": {
+          "@href": "/repo/3395554/builds?limit=2&offset=2",
+          "offset": 2,
+          "limit": 2
+      },
+      "prev": null,
+      "first": {
+          "@href": "/repo/3395554/builds?limit=2",
+          "offset": 0,
+          "limit": 2
+      },
+      "last": {
+          "@href": "/repo/3395554/builds?limit=2&offset=2322",
+          "offset": 2322,
+          "limit": 2
+      }
+  },
+  "builds": [
+      {
+          "state": "canceled"
+      }
+  ]
+}

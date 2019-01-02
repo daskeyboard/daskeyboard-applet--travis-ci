@@ -8,6 +8,7 @@ const ColorForBuildState = {
   "booting": "#FFA500", // orange
   "created": "#FFA500",
   "started": "#FFA500",
+  "canceled": "#0000FF",
   "passed": "#00FF00", // green
   "failed": "#FF0000" // red
 }
@@ -17,6 +18,7 @@ const EffectForBuildState = {
   "created": q.Effects.SET_COLOR,
   "started": q.Effects.SET_COLOR,
   "passed": q.Effects.SET_COLOR,
+  "canceled": q.Effects.SET_COLOR,
   "failed": q.Effects.BLINK
 }
 
@@ -24,6 +26,7 @@ const MessageForBuildState = {
   "booting": `build booting`,
   "created": `build created`,
   "started": `build running`,
+  "canceled": `build canceled`,
   "passed": `build passing`,
   "failed": `build failing`
 }
