@@ -1,12 +1,13 @@
 # Q Applet: Travis Build Info
 
-Get Travis build status alerts directly on a Das Keyboard Q keyboard. Requires a Travis account and the token linked to this account.
+Get Travis build status alerts directly on a Das Keyboard Q keyboard. Requires a Travis account
+and the token linked to this account: [https://travis-ci.com/](https://travis-ci.com/).
 
 [GitHub repository](https://github.com/daskeyboard/daskeyboard-applet--travis-build-info)
 
 ## Example
 
-State of one key when a build is failing
+The F3 key in the image below is red because the build of the software `q-desktop` is failing.
 ![Travis on a Das Keybaord Q](assets/image.png "Travis")
 
 ## Changelog
@@ -18,7 +19,7 @@ State of one key when a build is failing
 Requires a Das Keyboard Q Series: www.daskeyboard.com
 
 Installation, configuration and uninstallation of applets is done within
-the Q Desktop application (https://www.daskeyboard.com/q)
+the Q Desktop application [https://www.daskeyboard.com](https://www.daskeyboard.com/q).
 
 ## Running tests
 
