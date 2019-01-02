@@ -4,13 +4,6 @@ const logger = q.logger;
 
 const apiBaseUrl = 'https://api.travis-ci.com';
 
-const BUILD_STATE = Object.freeze({
-  CREATED: "created",
-  STARTED: "started",
-  PASSED: "passed",
-  FAILED: "failed"
-});
-
 const ColorForBuildState = {
   "booting": "#FFA500", // orange
   "created": "#FFA500",
