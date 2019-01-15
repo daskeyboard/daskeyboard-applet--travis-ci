@@ -65,6 +65,9 @@ class TravisBuildInfo extends q.DesktopApp {
     this.getRepoSlug().then(slug => this.repoSlug = slug);
   }
 
+  /**
+   * The slug of a repo is the name of the repo
+   */
   async getRepoSlug() {
     logger.info(`Getting selected repos slug`);
     const options = {
