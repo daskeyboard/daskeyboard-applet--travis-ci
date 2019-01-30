@@ -1,5 +1,10 @@
-
 # Changelog Q Applet Travis
+
+#### 1.0.2 (2019-01-30)
+
+##### Other Changes
+
+* **clean up:**  titles and links updated. (515349ab)
 
 #### 1.0.1 (2019-01-02)
 
