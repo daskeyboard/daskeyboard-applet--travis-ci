@@ -1,7 +1,7 @@
 {
   "name": "daskeyboard-applet--travis",
   "displayName": "Travis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "Das Keyboard",
   "longDescription": "Get Travis build status alerts directly on a Das Keyboard Q keyboard. Requires a Travis account and the token linked to this account.",
   "icon": "assets/icon.png",
@@ -12,8 +12,8 @@
   "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
   "homePageUrl": "https://travis.com",
   "changelogUrl": "CHANGELOG.md",
-  "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--montastic/issues",
-  "developerRepoUrl": "https://github.com/daskeyboard/daskeyboard-applet--montastic",
+  "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--travis/issues",
+  "developerRepoUrl": "https://github.com/daskeyboard/daskeyboard-applet--travis",
   "readMeEndUserUrl": "README_END_USER.md",
   "license": "MIT",
   "engines": {
