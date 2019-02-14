@@ -1,5 +1,11 @@
 # Changelog Q Applet Travis CI
 
+#### 1.0.3 (2019-02-14)
+
+##### Other Changes
+
+* **chore:**  Travis becomes Travis CI. New image
+
 #### 1.0.2 (2019-01-30)
 
 ##### Other Changes
