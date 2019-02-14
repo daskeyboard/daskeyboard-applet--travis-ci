@@ -170,11 +170,11 @@ class TravisBuildInfo extends q.DesktopApp {
           // Send the signal
           let signal = new q.Signal({
             points: [[new q.Point(signalColor, signalEffect)]],
-            name: `Travis`,
+            name: `Travis CI`,
             message: `${repoName}: ` + signalMessage,
             link: {
               url: `https://travis-ci.com/${this.repoSlug}`,
-              label: `Show in Travis`
+              label: `Show in Travis CI`
             }
           });
 

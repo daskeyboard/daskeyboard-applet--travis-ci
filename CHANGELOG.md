@@ -1,4 +1,4 @@
-# Changelog Q Applet Travis
+# Changelog Q Applet Travis CI
 
 #### 1.0.2 (2019-01-30)
 
