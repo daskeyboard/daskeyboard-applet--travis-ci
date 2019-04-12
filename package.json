@@ -1,7 +1,7 @@
 {
   "name": "daskeyboard-applet--travis-ci",
   "displayName": "Travis CI",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "Das Keyboard",
   "longDescription": "Get Travis CI build status alerts directly on a Das Keyboard Q keyboard. Requires a Travis CI account and the token linked to this account.",
   "icon": "assets/icon.png",
