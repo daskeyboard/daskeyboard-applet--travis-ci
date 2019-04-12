@@ -1,5 +1,16 @@
 # Changelog Q Applet Travis CI
 
+#### 1.0.4 (2019-04-12)
+
+##### Chores
+
+*  updated packages version with yarn. (868b58fb)
+*  upgraded version number to 1.0.4. (473ec3f2)
+
+##### Bug Fixes
+
+*  handled internet connection error. (8a30af56)
+
 #### 1.0.3 (2019-02-14)
 
 ##### Other Changes
