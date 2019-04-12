@@ -7,8 +7,6 @@ and the token linked to this account: [https://travis-ci.com/](https://travis-ci
 
 ## Example
 
-The key in the image below is red because the build of the software `q-desktop` is failing.
-
 ![Travis CI on a Das Keybaord Q](assets/image.png "Das Keyboard Travis CI applet")
 
 ## Changelog
