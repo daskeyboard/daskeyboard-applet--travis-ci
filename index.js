@@ -51,7 +51,7 @@ class TravisBuildInfo extends q.DesktopApp {
   constructor() {
     super();
     // run every min
-    this.pollingInterval = 60000; // every minute
+    this.pollingInterval = 60000;
   }
 
   /**
@@ -129,7 +129,7 @@ class TravisBuildInfo extends q.DesktopApp {
    * send a signal to the Das Keyboard Q Software depending on the build state
    */
   async run() {
-    logger.info(`Running.`);
+    logger.info(`Travis CI running.`);
     const repoId = this.config.repoId;
     if (repoId) {
       logger.info(`My repoId is: ${repoId}`);
@@ -184,7 +184,12 @@ class TravisBuildInfo extends q.DesktopApp {
         }
       }).catch(error => {
         logger.error(`Error while getting builds for repoId ${repoId}: ${error}`);
-        return q.Signal.error([`Error while getting builds for repoId ${repoId}`]);
+        if(`${error.message}`.includes("getaddrinfo")){
+          return q.Signal.error(
+            'The Travis CI service returned an error. <b>Please check your internet connection</b>.'
+          );
+        }
+        return q.Signal.error([`Error while getting builds for repoId ${repoId}.`]);
       })
     } else {
       logger.info(`No repoId configured.`);
