@@ -1,5 +1,11 @@
 # Changelog Q Applet Travis CI
 
+#### 1.0.5 (2019-05-15)
+
+##### Chores
+
+*  Removed internet connection error
+
 #### 1.0.4 (2019-04-12)
 
 ##### Chores
