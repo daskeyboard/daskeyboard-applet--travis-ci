@@ -185,11 +185,13 @@ class TravisBuildInfo extends q.DesktopApp {
       }).catch(error => {
         logger.error(`Error while getting builds for repoId ${repoId}: ${error}`);
         if(`${error.message}`.includes("getaddrinfo")){
-          return q.Signal.error(
-            'The Travis CI service returned an error. <b>Please check your internet connection</b>.'
-          );
+          // Do not send signal when getting internet connection error
+          // return q.Signal.error(
+          //   'The Travis CI service returned an error. <b>Please check your internet connection</b>.'
+          // );
+        }else{
+          return q.Signal.error([`The Travis CI service returned an error. <b>Please check your configuration</b>. Details: error while getting builds for repoId ${repoId}.`]);
         }
-        return q.Signal.error([`Error while getting builds for repoId ${repoId}.`]);
       })
     } else {
       logger.info(`No repoId configured.`);
