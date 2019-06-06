@@ -150,15 +150,10 @@ class TravisBuildInfo extends q.DesktopApp {
           }
           /**
            * set the signal effect depending on the build state.
-           * apply the config if getting failed status
            * SET_COLOR if state not recognized
            */
           if (Object.keys(EffectForBuildState).includes(latestBuildState)) {
-            if(latestBuildState == "failed"){
-              signalEffect = this.config.effect;
-            }else{
-              signalEffect = EffectForBuildState[latestBuildState];
-            }
+            signalEffect = EffectForBuildState[latestBuildState];
           } else {
             signalEffect = q.Effects.SET_COLOR;
           }
