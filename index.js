@@ -13,9 +13,6 @@ const ColorForBuildState = {
   "failed": "#FF0000" // red
 }
 
-// Failed state doesn't matter.
-// The config into package.json has a higher priority
-
 const EffectForBuildState = {
   "booting": q.Effects.SET_COLOR,
   "created": q.Effects.SET_COLOR,
