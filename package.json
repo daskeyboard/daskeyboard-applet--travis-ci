@@ -46,7 +46,7 @@
       },
       {
         "key": "effect",
-        "label": "Select an effect when getting a failed state",
+        "label": "Select a notification effect for failed builds",
         "help": "",
         "required": true,
         "order": 2,
