@@ -1,5 +1,11 @@
 # Changelog Q Applet Travis CI
 
+#### 2.0.0 (2019-06-06)
+
+##### New Features
+
+* Allow to set up the effect of the signal when getting failed builds.
+
 #### 1.0.5 (2019-05-15)
 
 ##### Chores
