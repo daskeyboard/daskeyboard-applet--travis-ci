@@ -13,9 +13,6 @@ const ColorForBuildState = {
   "failed": "#FF0000" // red
 }
 
-// Failed state doesn't matter.
-// The config into package.json has a higher priority
-
 const EffectForBuildState = {
   "booting": q.Effects.SET_COLOR,
   "created": q.Effects.SET_COLOR,
@@ -153,7 +150,7 @@ class TravisBuildInfo extends q.DesktopApp {
           }
           /**
            * set the signal effect depending on the build state.
-           * apply the config if getting failed status
+           * apply effect from the config
            * SET_COLOR if state not recognized
            */
           if (Object.keys(EffectForBuildState).includes(latestBuildState)) {
