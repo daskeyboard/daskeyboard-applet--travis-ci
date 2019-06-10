@@ -1,6 +1,6 @@
 # Changelog Q Applet Travis CI
 
-#### 2.0.0 (2019-06-06)
+#### 1.0.6 (2019-06-10)
 
 ##### New Features
 
