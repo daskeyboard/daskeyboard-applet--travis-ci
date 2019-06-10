@@ -1,7 +1,8 @@
 # Q Applet: Travis CI
 
-Get Travis CI build status alerts directly on a Das Keyboard Q keyboard. Requires a Travis account
-and the token linked to this account: [https://travis-ci.com/](https://travis-ci.com/).
+Get Travis CI build status alerts directly on a Das Keyboard Q keyboard.
+
+Requires a Travis account and the token linked to this account: [https://travis-ci.com/](https://travis-ci.com/).
 
 [GitHub repository](https://github.com/daskeyboard/daskeyboard-applet--travis)
 
